@@ -1,0 +1,36 @@
+.margenmenu {
+    margin-top: 50px !important;
+    height: 400px !important;
+}
+
+.ui.text.container {
+    max-width: 850px !important;
+}
+
+.iconoPasos {
+    width: 20% !important;
+}
+
+.textoPasos {
+    width: 80% !important;
+}
+
+.margen20 {
+    margin-top: 20px !important;
+    margin-left: 40% !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+}
+
+.margencartas {
+    margin: auto !important;
+    width: 80% !important;
+}
+
+.ancho80 {
+    width: 80% !important;
+}
+
+.largo2ymedio {
+    height: 25% !important;
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #DADADA;
+}
+body > .grid {
+    height: 100%;
+}
+.image {
+    margin-top: 20px!important;
+}
+.column {
+    max-width: 450px;
+}
+.centrado {
+    text-align: justify!important;
+}
+
+.huecoFooter{
+    height: 33% !important;
+}

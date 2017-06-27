@@ -1,0 +1,32 @@
+<div class="ui secondary pointing menu">
+  <div class="ui container">
+    <a class="item" routerLink="/principal" routerLinkActive="active">
+      <img src="/assets/logo_menu_b.png">
+    </a>
+    <a class="item" routerLink="/quienessomos" routerLinkActive="active">
+      ¿Quienes somos?
+    </a>
+    <a class="item" routerLink="/reclamaciones" routerLinkActive="active">
+      Reclamaciones
+    </a>
+    <a class="item" routerLink="/contacto" routerLinkActive="active">
+      Contacto
+    </a>
+    <a class="item" routerLink="/blog" routerLinkActive="active">
+      Blog
+    </a>
+    <div class="right menu">
+      <a class="ui item" routerLink="/login" routerLinkActive="active" *ngIf='!logueado'>
+        Inicia sesión
+      </a>
+      <div class="ui pointing dropdown link item" *ngIf='logueado'>
+        <span class="text">{{nombre}}</span>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Ver Perfil</div>
+          <div class="item">Salir</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="ui container margenmenu">
+  <form class="ui form" [formGroup]='form' (ngSubmit)='OnSubmit(form.value)'>
+    <div class="ui grid container margenBotones">
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="green plane icon"></i>
+          <input type="text" formControlName="numVuelo" placeholder="FR4589">
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="green calendar icon"></i>
+          <input type="date" formControlName="fecha" placeholder="01/01/2017">
+        </div>
+      </div>
+      <div class="field">
+        <button class="ui small green submit button" type="submit">Comprueba tus derechos</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+.margenmenu {
+    margin-top: 50px !important;
+    height: 200px !important;
+}
+
+agm-map {
+  height: 300px !important;
+  width: 100% !important;
+}
+
+.iconoContactos {
+    padding-left: 15% !important;
+    padding-top: 0.75% !important;
+}
+
+.textoContactos {
+    width: 30% !important;
+}
+
+.huecoFooter {
+    padding-bottom: 50px;
+}

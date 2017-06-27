@@ -1,0 +1,122 @@
+<div class="ui text container margenmenu">
+  <h1 class="ui header left">
+    Formulario de contacto
+  </h1>
+  <div class="ui divider"></div>
+  <h2>Si tienes alguna duda, rellena nuestro formulario de contacto y te contestaremos en menos de 24 horas.</h2>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable container">
+    <form class="ui large form">
+      <div class="ui grid segment">
+        <div class="row">
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                Nombre
+              </div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                Apellidos
+              </div>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                Email
+              </div>
+              <input type="text" placeholder="tumail@tuservidor.com">
+            </div>
+          </div>
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                Telefono
+              </div>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                CIF
+              </div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="ui labeled input">
+            <div class="field">
+              <div class="ui label">
+                Soy una agencia de viajes
+              </div>
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui blue labeled submit icon button">
+            <i class="icon edit"></i> Add Reply
+          </div>
+        </div>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable container">
+    <div id="mapaGoogle">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeId]="tipoMapa">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment huecoFooter">
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="ui container four column grid">
+        <div class="row">
+          <div class="ui left one column iconoContactos">
+            <h3>Teléfono</h3>
+            <i class="ui huge margen20 red call icon"></i>
+          </div>
+          <div class="ui right three column textoContactos">
+            <h3 class="ui header">Llámanos cuando lo necesites o agreganos a Whatsapp si lo prefieres, estaremos encantados de atenderte.</h3>
+            <p>(+34) 695 86 15 22. De lunes a viernes de 9 a 21 horas.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui left column iconoContactos">
+            <h3>Email</h3>
+            <i class="ui huge margen20 blue mail outline icon"></i>
+          </div>
+          <div class="ui right column textoContactos">
+            <h3 class="ui header">Si prefieres contactar con nosotros por email, escríbenos usando el formulario de más arriba.</h3>
+            <p>Escríbenos de lunes a viernes de 9 a 21 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
