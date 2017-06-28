@@ -9,6 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 
 import { UserService } from './services/user.service';
 import { AlertasService } from './services/alertas.service';
+import { AuthenticationService } from './services/authentication.service';
+
+import { AuthGuard } from './guards/auth.guard';
 
 import { routing, appRoutingProviders } from './app.routing';
 import { PrincipalComponent } from './principal/principal.component';
@@ -21,6 +24,12 @@ import { FooterComponent } from './footer/footer.component';
 import { AvisolegalComponent } from './avisolegal/avisolegal.component';
 import { AvisocookiesComponent } from './avisocookies/avisocookies.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { RegistroComponent } from './registro/registro.component';
+
+//Usado para crear el falso backend
+import { fakeBackendProvider } from './helpers/fake-backend';
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { BaseRequestOptions } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +45,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     AvisolegalComponent,
     AvisocookiesComponent,
     AlertasComponent,
-    AlertasComponent
+    AlertasComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +58,18 @@ import { AlertasComponent } from './alertas/alertas.component';
       apiKey: 'AIzaSyC5W2vTbXG4NYcpYqdDvQtbro6Oc-g7xns'
     })
   ],
-  providers: [ UserService, AlertasService, appRoutingProviders],
+  providers: [
+    UserService,
+    AlertasService,
+    appRoutingProviders,
+    AuthenticationService,
+    AuthGuard,
+
+    //Providers usados para crear el fake backend
+    fakeBackendProvider,
+    MockBackend,
+    BaseRequestOptions
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

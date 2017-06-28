@@ -14,8 +14,7 @@ export class MenuComponent implements OnInit {
   constructor(private userService : UserService) { }
 
   ngOnInit() {
-    this.logueado = this.userService.isLogueado();
-    this.nombre = this.userService.usuario;
+
   }
 
 }

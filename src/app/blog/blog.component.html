@@ -2,4 +2,16 @@
   <h1 class="green header">
     Blog en construcción
   </h1>
+
+  <br/>
+  <br/>
+  <h1> {{currentUser.firstName}}! u mothefucka </h1>
+  <p> Estás logueado usando angular2! </p>
+  <h3> Usuarios registrados: </h3>
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.username}} ({{user.firstName}} {{user.lastName}}) - <a (click)="deleteUser(user.id)">Borrar</a>
+    </li>
+  </ul>
+  <p><a [routerLink]="['/login']">Logout</a></p>
 </div>
